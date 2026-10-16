@@ -11,7 +11,7 @@ Sito statico in Jekyll, pensato per GitHub Pages: lo compila GitHub a ogni push,
    - per `www.tuodominio.it`: record **CNAME** verso `<tuo-utente>.github.io`;
    - per il dominio nudo `tuodominio.it`: record **A** verso `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (e AAAA verso `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`).
 5. Quando il certificato è pronto, attiva **Enforce HTTPS**.
-6. `_config.yml` è già configurato per il repository `personal-website`. Se pubblichi su un dominio personalizzato, aggiorna `url` e imposta `baseurl: ""`; se rinomini il repository, aggiorna `baseurl` con `/<nome-repository>`.
+6. `_config.yml` è configurato per il sito utente (repository `elisabettachisso.github.io`, `baseurl: ""`). Se pubblichi su un dominio personalizzato, aggiorna `url` e imposta `baseurl: ""`; se rinomini il repository, aggiorna `baseurl` con `/<nome-repository>`.
 
 ## Da completare
 
@@ -41,4 +41,3 @@ Gli articoli compaiono nella lingua scelta con il selettore IT/EN. Se esiste la 
 ## Anteprima in locale (facoltativa)
 
 Con Ruby installato: `gem install bundler jekyll` e poi `jekyll serve` nella cartella; il sito è su `http://localhost:4000`.
-"# personal-website" 
