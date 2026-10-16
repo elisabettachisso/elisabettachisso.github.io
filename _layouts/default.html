@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'it' }}" data-lang="{{ page.lang | default: 'it' }}"{% if page.lang %} data-force-lang="{{ page.lang }}"{% endif %}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.summary | default: site.description }}">
+<script>
+  (function () {
+    var forced = document.documentElement.getAttribute('data-force-lang');
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    var lang = forced || saved || ((navigator.language || 'it').slice(0, 2) === 'it' ? 'it' : 'en');
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.lang = lang;
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%237A5BA6' stroke-width='4'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main"><span data-l="it">Vai al contenuto</span><span data-l="en">Skip to content</span></a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="{{ '/' | relative_url }}">Elisabetta Chisso</a>
+    <nav aria-label="Principale">
+      <a href="{{ '/#percorso' | relative_url }}"><span data-l="it">Percorso</span><span data-l="en">Path</span></a>
+      <a href="{{ '/#progetti' | relative_url }}"><span data-l="it">Progetti</span><span data-l="en">Projects</span></a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/#contatti' | relative_url }}"><span data-l="it">Contatti</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button type="button" data-set-lang="it">IT</button>
+      <button type="button" data-set-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{{ content }}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© {{ site.time | date: "%Y" }} Elisabetta Chisso</span>
+    <span><a href="{{ site.author.linkedin }}">LinkedIn</a> · <a href="mailto:{{ site.author.email }}">Email</a></span>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

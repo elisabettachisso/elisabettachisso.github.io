@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% assign other = site.posts | where: "ref", page.ref | where_exp: "p", "p.lang != page.lang" | first %}
+<article class="wrap post" {% if other %}data-translation="{{ other.url | relative_url }}"{% endif %}>
+  <a class="back" href="{{ '/blog/' | relative_url }}">{% if page.lang == 'it' %}Tutti gli articoli{% else %}All posts{% endif %}</a>
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>{% if other %} · <a href="{{ other.url | relative_url }}" hreflang="{{ other.lang }}">{% if page.lang == 'it' %}Read in English{% else %}Leggi in italiano{% endif %}</a>{% endif %}</p>
+  <div class="post-body">
+    {{ content }}
+  </div>
+</article>

@@ -11,11 +11,11 @@ Sito statico in Jekyll, pensato per GitHub Pages: lo compila GitHub a ogni push,
    - per `www.tuodominio.it`: record **CNAME** verso `<tuo-utente>.github.io`;
    - per il dominio nudo `tuodominio.it`: record **A** verso `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (e AAAA verso `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`).
 5. Quando il certificato è pronto, attiva **Enforce HTTPS**.
-6. In `_config.yml` imposta `url` con il tuo dominio e `github` con il tuo profilo.
+6. `_config.yml` è già configurato per il repository `personal-website`. Se pubblichi su un dominio personalizzato, aggiorna `url` e imposta `baseurl: ""`; se rinomini il repository, aggiorna `baseurl` con `/<nome-repository>`.
 
 ## Da completare
 
-- `_config.yml`: `url` e link GitHub.
+- `_config.yml`: aggiorna `url`, `baseurl` e i link personali se cambiano dominio, repository o profili.
 - `index.html`: tesi magistrale e stack della web app (cerca le parentesi quadre `[ ]`).
 - `assets/cv/`: esporta il CV in PDF e salvalo come `CV_Elisabetta_Chisso_IT.pdf` e `CV_Elisabetta_Chisso_EN.pdf`. Prima di pubblicarlo valuta se togliere telefono e data di nascita, perché il sito è pubblico.
 - `assets/img/elisabetta.jpg`: sostituiscila con una foto a risoluzione più alta quando ce l'hai.
