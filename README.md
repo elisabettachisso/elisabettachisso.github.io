@@ -17,7 +17,7 @@ Sito statico in Jekyll, pensato per GitHub Pages: lo compila GitHub a ogni push,
 
 - `_config.yml`: aggiorna `url`, `baseurl` e i link personali se cambiano dominio, repository o profili.
 - `index.html`: tesi magistrale e stack della web app (cerca le parentesi quadre `[ ]`).
-- `assets/cv/`: esporta il CV in PDF e salvalo come `CV_Elisabetta_Chisso_IT.pdf` e `CV_Elisabetta_Chisso_EN.pdf`. Prima di pubblicarlo valuta se togliere telefono e data di nascita, perché il sito è pubblico.
+- `assets/cv/`: i PDF del CV (IT ed EN) sono esportati dal canvas su claude.ai; se aggiorni il CV, riesportali con gli stessi nomi.
 - `assets/img/elisabetta.jpg`: sostituiscila con una foto a risoluzione più alta quando ce l'hai.
 
 ## Scrivere un articolo
