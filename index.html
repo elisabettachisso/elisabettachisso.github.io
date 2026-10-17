@@ -1,10 +1,16 @@
 ---
 layout: default
 ---
-<section class="hero wrap">
-  <img class="hero-photo" src="{{ '/assets/img/elisabetta.jpg' | relative_url }}" alt="Elisabetta Chisso" width="168" height="168">
-  <div class="hero-text">
-    <h1>Elisabetta Chisso</h1>
+<section class="hero">
+  <canvas class="hero-art" data-art aria-hidden="true"></canvas>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="art-meta">
+    <span><span data-l="it">composizione</span><span data-l="en">composition</span> n° <span data-art-seed>—</span></span>
+    <button type="button" data-art-new>↻ <span data-l="it">nuova</span><span data-l="en">new</span></button>
+  </div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Security · Infrastructure · Code</p>
+    <h1>Elisabetta<br><span class="grad">Chisso</span></h1>
     <p class="hero-role">Security &amp; IT Infrastructure Analyst</p>
     <p class="hero-lead" data-l="it">Lavoro su sicurezza e infrastruttura Microsoft 365 in un gruppo assicurativo e scrivo software da quando ho iniziato. Mi piace avere il quadro completo: come si configura un sistema, quanto costa, chi lo usa e come si spiega al management.</p>
     <p class="hero-lead" data-l="en">I work on Microsoft 365 security and infrastructure in an insurance group, and I have been writing software since day one. I like the full picture: how a system is configured, what it costs, who relies on it and how to explain it to management.</p>
@@ -19,11 +25,14 @@ layout: default
 
 <section class="section wrap about">
   <h2><span data-l="it">Chi sono</span><span data-l="en">About</span></h2>
-  <div class="prose">
-    <p data-l="it">Sono nata come sviluppatrice full stack e sono cresciuta verso sicurezza e infrastruttura, quindi guardo la tecnologia da entrambi i lati: come si costruisce e come si gestisce, si protegge e si governa.</p>
-    <p data-l="it">Oggi lavoro in prima persona sui due tenant Microsoft 365 di un gruppo assicurativo di circa venti società e 350 utenti e, accanto al lavoro tecnico, coordino fornitori e colleghi nei progetti più ampi: integrazione IT delle società acquisite, migrazioni, budget e procedure. In parallelo concludo la laurea magistrale in Ingegneria Informatica all'Università di Trieste.</p>
-    <p data-l="en">I started as a full stack developer and grew into security and infrastructure, so I see technology from both sides: how it is built, and how it is run, secured and governed.</p>
-    <p data-l="en">Today I work hands-on on the two Microsoft 365 tenants of an insurance group of around twenty companies and 350 users and, alongside the technical work, coordinate vendors and colleagues on larger projects: IT integration of acquired companies, migrations, budget and procedures. In parallel I am completing my MSc in Computer Engineering at the University of Trieste.</p>
+  <div class="about-grid">
+    <div class="prose">
+      <p class="big" data-l="it">Sono nata come sviluppatrice full stack e sono cresciuta verso sicurezza e infrastruttura, quindi guardo la tecnologia da entrambi i lati: come si costruisce e come si gestisce, si protegge e si governa.</p>
+      <p data-l="it">Oggi lavoro in prima persona sui due tenant Microsoft 365 di un gruppo assicurativo di circa venti società e 350 utenti e, accanto al lavoro tecnico, coordino fornitori e colleghi nei progetti più ampi: integrazione IT delle società acquisite, migrazioni, budget e procedure. In parallelo concludo la laurea magistrale in Ingegneria Informatica all'Università di Trieste.</p>
+      <p class="big" data-l="en">I started as a full stack developer and grew into security and infrastructure, so I see technology from both sides: how it is built, and how it is run, secured and governed.</p>
+      <p data-l="en">Today I work hands-on on the two Microsoft 365 tenants of an insurance group of around twenty companies and 350 users and, alongside the technical work, coordinate vendors and colleagues on larger projects: IT integration of acquired companies, migrations, budget and procedures. In parallel I am completing my MSc in Computer Engineering at the University of Trieste.</p>
+    </div>
+    <div class="portrait"><img src="{{ '/assets/img/elisabetta.jpg' | relative_url }}" alt="Elisabetta Chisso" width="260" height="260" loading="lazy"></div>
   </div>
 </section>
 
@@ -185,7 +194,7 @@ layout: default
     </li>
     {% endfor %}
   </ol>
-  <p><a href="{{ '/blog/' | relative_url }}"><span data-l="it">Tutti gli articoli</span><span data-l="en">All posts</span></a></p>
+  <p class="more"><a href="{{ '/blog/' | relative_url }}"><span data-l="it">Tutti gli articoli</span><span data-l="en">All posts</span></a></p>
 </section>
 
 <section class="section wrap contact" id="contatti">
