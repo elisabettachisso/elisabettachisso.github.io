@@ -32,7 +32,7 @@
   var toggle = document.querySelector('[data-toggle-theme]');
   if (toggle) {
     toggle.addEventListener('click', function () {
-      var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}
       themeListeners.forEach(function (fn) { fn(); });
@@ -48,7 +48,7 @@
       ground: s.getPropertyValue('--ground').trim(),
       panel: s.getPropertyValue('--panel-2').trim(),
       inks: ['--a1', '--a3', '--a2'].map(function (v) { return s.getPropertyValue(v).trim(); }),
-      light: root.getAttribute('data-theme') === 'light'
+      light: root.getAttribute('data-theme') !== 'dark'
     };
   }
 
@@ -121,7 +121,7 @@
       for (var f = 0; f < frames && s.step < opts.steps; f++, s.step++) {
         for (var c = 0; c < 3; c++) {
           ctx.strokeStyle = s.pal.inks[c];
-          ctx.globalAlpha = opts.alpha * (s.pal.light ? 1.4 : 1);
+          ctx.globalAlpha = opts.alpha * (s.pal.light ? 0.9 : 1);
           ctx.beginPath();
           for (var i = 0; i < s.parts.length; i++) {
             var p = s.parts[i];
@@ -142,7 +142,7 @@
       frame = null;
       if (!state || state.step >= opts.steps) return;
       if (!visible) return;
-      advance(state, 2);
+      advance(state, 3);
       frame = requestAnimationFrame(loop);
     }
 
@@ -175,8 +175,8 @@
     var seedLabel = document.querySelector('[data-art-seed]');
     var newSeed = function () { return 1 + Math.floor(Math.random() * 9999); };
     var hero = new Composition({
-      canvas: heroCanvas, seed: newSeed(), density: 520, max: 2600,
-      steps: 520, scale: 0.0016, alpha: 0.075, width: 1.1, animate: true
+      canvas: heroCanvas, seed: newSeed(), density: 360, max: 3200,
+      steps: 640, scale: 0.0016, alpha: 0.1, width: 1.2, animate: true
     });
     var label = function (s) { if (seedLabel) seedLabel.textContent = String(s).padStart(4, '0'); };
     var current = 0;

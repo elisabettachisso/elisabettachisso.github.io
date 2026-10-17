@@ -1,36 +1,36 @@
 /* ---------- tokens ---------- */
-/* Nocturne: indigo ink ground, three lights (signal coral, violet, aqua). */
+/* Blush paper (default): plum ink, three lights — rose, lilac, blue. */
 :root {
-  --ground: #0A0B14;
-  --panel: #12142A;
-  --panel-2: #191C38;
-  --ink: #EEEAF6;
-  --muted: #A6A2BE;
-  --line: #262A4E;
-  --a1: #FF6B4A;   /* lavoro, accento principale */
-  --a2: #3EE6C8;   /* studio, numeri */
-  --a3: #A48BFF;   /* sviluppo */
-  --on-a1: #0A0B14;
+  --ground: #FBF6F2;
+  --panel: #F6ECE6;
+  --panel-2: #F0E2DA;
+  --ink: #2A1A2E;
+  --muted: #6B5A6E;
+  --line: #EADBD3;
+  --a1: #C2366E;   /* lavoro, accento principale */
+  --a2: #2266B8;   /* studio, numeri */
+  --a3: #6E44D4;   /* sviluppo */
+  --on-a1: #FFFFFF;
   --sans: 'Figtree', 'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif;
   --mono: var(--sans);
   --code: ui-monospace, Menlo, Consolas, monospace;
   --measure: 66ch;
   --radius: 18px;
-  color-scheme: dark;
-}
-/* Paper: the same three lights, darkened for text on a warm ground. */
-:root[data-theme="light"] {
-  --ground: #F5F2EA;
-  --panel: #ECE7DB;
-  --panel-2: #E4DDCD;
-  --ink: #15131F;
-  --muted: #55516A;
-  --line: #D9D1BF;
-  --a1: #C23A18;
-  --a2: #087766;
-  --a3: #5B3FD0;
-  --on-a1: #FFFFFF;
   color-scheme: light;
+}
+/* Plum night (optional): the same lights, brighter on a deep plum ground. */
+:root[data-theme="dark"] {
+  --ground: #170E1F;
+  --panel: #22152C;
+  --panel-2: #2B1B37;
+  --ink: #F6EEF4;
+  --muted: #BCA9BF;
+  --line: #3A2848;
+  --a1: #FF7EB0;
+  --a2: #8EC5FF;
+  --a3: #B79CFF;
+  --on-a1: #170E1F;
+  color-scheme: dark;
 }
 
 /* ---------- base ---------- */
@@ -116,8 +116,8 @@ main { counter-reset: sec; }
 .theme:hover { border-color: var(--a2); color: var(--a2); }
 .theme svg { width: 18px; height: 18px; }
 .theme .sun { display: none; }
-:root[data-theme="light"] .theme .sun { display: block; }
-:root[data-theme="light"] .theme .moon { display: none; }
+:root[data-theme="dark"] .theme .sun { display: block; }
+:root[data-theme="dark"] .theme .moon { display: none; }
 @media (max-width: 760px) {
   html { scroll-padding-top: 104px; }
   .nav-inner {
@@ -144,7 +144,10 @@ main { counter-reset: sec; }
   position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background:
     linear-gradient(to top, var(--ground) 0%, color-mix(in srgb, var(--ground) 70%, transparent) 30%, transparent 62%),
-    linear-gradient(to right, color-mix(in srgb, var(--ground) 82%, transparent) 0%, transparent 58%);
+    linear-gradient(to right, color-mix(in srgb, var(--ground) 90%, transparent) 0%, color-mix(in srgb, var(--ground) 55%, transparent) 42%, transparent 66%);
+}
+@media (max-width: 760px) {
+  .hero-scrim { background: linear-gradient(to top, var(--ground) 0%, color-mix(in srgb, var(--ground) 78%, transparent) 55%, color-mix(in srgb, var(--ground) 35%, transparent) 100%); }
 }
 .hero-inner { padding-block: clamp(6rem, 14vw, 9rem) clamp(3.5rem, 8vw, 5.5rem); }
 .eyebrow { font-size: .85rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--a2); }
@@ -156,6 +159,8 @@ main { counter-reset: sec; }
 .hero h1 .grad {
   background: linear-gradient(100deg, var(--a1) 10%, var(--a3) 55%, var(--a2) 95%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
+  /* room for the last glyph, which the negative tracking pushes past the box */
+  padding-right: .08em; margin-right: -.08em; padding-bottom: .06em;
 }
 .hero-role { margin-top: 1.4rem; font-size: clamp(1.15rem, 2.2vw, 1.5rem); font-weight: 600; color: var(--ink); }
 .hero-lead { margin-top: 1rem; max-width: 56ch; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.12rem); }
@@ -173,9 +178,12 @@ main { counter-reset: sec; }
 
 .art-meta {
   position: absolute; right: clamp(1.25rem, 3vw, 2.5rem); top: calc(64px + 1.25rem);
-  display: flex; align-items: center; gap: .6rem;
+  z-index: 1; display: flex; align-items: center; gap: .4rem; padding: 4px 4px 4px 1rem; border-radius: 999px;
   font-size: .8rem; font-weight: 600; letter-spacing: .08em; color: var(--muted);
+  background: color-mix(in srgb, var(--ground) 70%, transparent); border: 1px solid var(--line);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }
+.art-meta [data-art-seed] { color: var(--ink); font-variant-numeric: tabular-nums; }
 .art-meta button {
   font: inherit; letter-spacing: inherit; color: var(--ink); cursor: pointer;
   min-height: 40px; padding: 0 .95rem; border-radius: 999px; border: 1px solid var(--line);
