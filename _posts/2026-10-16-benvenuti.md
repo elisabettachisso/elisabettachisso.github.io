@@ -10,7 +10,7 @@ Mi chiamo Elisabetta e lavoro come Security & IT Infrastructure Analyst in un gr
 
 ## Da dove vengo
 
-Ho cominciato scrivendo software e non ho mai smesso. Con Insureteach sviluppo Insurelab, la piattaforma che ospita corsi e academy, e YourSpace, il CRM con l’area dedicata ai clienti.
+Ho cominciato scrivendo software e non ho mai smesso. Con Insureteach sviluppo Insurelab, la piattaforma che ospita corsi e academy, e YourSpace, la piattaforma per la gestione dei processi assicurativi.
 
 Col tempo mi sono avvicinata a quello che sta sotto le applicazioni: identità, reti, dispositivi, permessi. Oggi conosco entrambi i lati della tecnologia, come si costruisce un sistema e come lo si mantiene sicuro e sotto controllo, e credo sia la cosa che mi rende utile.
 
