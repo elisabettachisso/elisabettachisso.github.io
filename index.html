@@ -1,89 +1,96 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <canvas class="hero-art" data-art aria-hidden="true"></canvas>
-  <div class="hero-scrim" aria-hidden="true"></div>
-  <div class="art-meta">
-    <span><span data-l="it">composizione</span><span data-l="en">composition</span> n° <span data-art-seed>—</span></span>
-    <button type="button" data-art-new>↻ <span data-l="it">nuova</span><span data-l="en">new</span></button>
-  </div>
-  <div class="wrap hero-inner">
-    <p class="eyebrow">Security · Infrastructure · Code</p>
+<section class="hero wrap">
+  <div class="hero-inner">
     <h1><span class="grad">Elisabetta</span><br>Chisso</h1>
     <p class="hero-role">Security &amp; IT Infrastructure Analyst</p>
-    <p class="hero-lead" data-l="it">Mi occupo di sicurezza e infrastruttura Microsoft 365 per un gruppo assicurativo. Vengo dallo sviluppo software e non ho mai smesso di programmare. Di ogni sistema voglio capire come funziona, quanto costa e chi lo usa, per saperlo spiegare a chi deve prendere le decisioni.</p>
-    <p class="hero-lead" data-l="en">I look after Microsoft 365 security and infrastructure for an insurance group. I come from software development and I still write code. With every system, I want to know how it works, what it costs and who depends on it, so I can explain it to the people who make the decisions.</p>
+    <p class="hero-headline"><span data-l="it">Tecnologia, processi e decisioni.</span><span data-l="en">Technology, processes and decisions.</span></p>
+    <p class="hero-lead" data-l="it">Un percorso nato nello sviluppo software, cresciuto nella sicurezza e nella gestione delle infrastrutture, oggi sempre più orientato alla governance IT. Metto la conoscenza tecnica al servizio delle scelte aziendali, con attenzione a rischi, costi e necessità operative.</p>
+    <p class="hero-lead" data-l="en">A career that began in software development, grew through security and infrastructure management, and is now moving increasingly towards IT governance. I put technical knowledge to work for business decisions, with attention to risk, cost and operational needs.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="mailto:{{ site.author.email }}"><span data-l="it">Scrivimi</span><span data-l="en">Email me</span></a>
+      <a class="btn btn-primary" href="mailto:{{ site.author.email }}"><span data-l="it">Contattami</span><span data-l="en">Get in touch</span></a>
       <a class="btn" href="{{ site.author.linkedin }}">LinkedIn</a>
       <a class="btn" data-l="it" href="{{ '/assets/cv/CV_Elisabetta_Chisso_IT.pdf' | relative_url }}">Scarica il CV</a>
       <a class="btn" data-l="en" href="{{ '/assets/cv/CV_Elisabetta_Chisso_EN.pdf' | relative_url }}">Download CV</a>
     </div>
   </div>
+  <figure class="hero-frame">
+    <canvas class="hero-art" data-art aria-hidden="true"></canvas>
+    <button type="button" class="art-new" data-art-new aria-label="Nuova composizione generativa / New generative composition" title="Nuova composizione / New composition">↻</button>
+  </figure>
 </section>
 
 <section class="section wrap about">
   <h2><span data-l="it">Chi sono</span><span data-l="en">About</span></h2>
   <div class="about-grid">
     <div class="prose">
-      <p class="big" data-l="it">Ho cominciato scrivendo software e sono arrivata alla sicurezza e all’infrastruttura. Conosco quindi entrambi i lati della tecnologia: come si costruisce un sistema e come lo si mantiene sicuro, affidabile e sotto controllo.</p>
-      <p data-l="it">Oggi gestisco i due tenant Microsoft 365 di un gruppo assicurativo di una ventina di società, per circa 350 persone. Al lavoro tecnico affianco il coordinamento di fornitori e colleghi: integro nel gruppo le società acquisite, pianifico le migrazioni, seguo budget e procedure. Sto concludendo la laurea magistrale in Ingegneria Informatica all’Università di Trieste.</p>
-      <p class="big" data-l="en">I started out writing software and moved into security and infrastructure. So I know both sides of technology: how a system is built, and how to keep it secure, reliable and under control.</p>
-      <p data-l="en">Today I manage the two Microsoft 365 tenants of an insurance group of some twenty companies and around 350 people. Alongside the technical work I coordinate vendors and colleagues: I bring acquired companies into the group, plan migrations, and look after budgets and procedures. I am completing my MSc in Computer Engineering at the University of Trieste.</p>
+      <p class="big" data-l="it">Lo sviluppo software è il punto di partenza del mio percorso e resta parte della mia attività. Nel tempo, il mio ruolo si è ampliato alla sicurezza, alle infrastrutture e al coordinamento dell’IT, ambiti su cui sto concentrando sempre più il mio lavoro.</p>
+      <p data-l="it">Oggi seguo due tenant Microsoft 365 per un gruppo assicurativo di circa venti società e 350 persone. Affianco alla gestione tecnica il coordinamento dei fornitori, l’integrazione delle società acquisite, la pianificazione delle migrazioni e la gestione di budget e procedure.</p>
+      <p data-l="it">Il mio interesse è rivolto alla governance IT: comprendere le esigenze dell’organizzazione, definire le priorità e contribuire a decisioni consapevoli su tecnologia, investimenti e rischi. L’esperienza nello sviluppo mi aiuta a valutare le soluzioni nel dettaglio e a dialogare con chi le realizza e le gestisce.</p>
+      <p data-l="it">Sto completando la laurea magistrale in Ingegneria Informatica all’Università degli Studi di Trieste.</p>
+      <p class="big" data-l="en">Software development is where my career began, and it is still part of my work. Over time my role has expanded into security, infrastructure and IT coordination, the areas where I am increasingly focusing my work.</p>
+      <p data-l="en">Today I look after two Microsoft 365 tenants for an insurance group of about twenty companies and 350 people. Alongside the technical management, I coordinate vendors, integrate acquired companies, plan migrations and manage budgets and procedures.</p>
+      <p data-l="en">My interest lies in IT governance: understanding what the organisation needs, setting priorities and contributing to informed decisions on technology, investment and risk. My development background helps me assess solutions in detail and talk with the people who build and run them.</p>
+      <p data-l="en">I am completing my MSc in Computer Engineering at the University of Trieste.</p>
     </div>
     <div class="portrait"><img src="{{ '/assets/img/elisabetta.jpg' | relative_url }}" alt="Elisabetta Chisso" width="260" height="260" loading="lazy"></div>
   </div>
 </section>
 
 <section class="section wrap" id="percorso">
-  <h2><span data-l="it">Percorso</span><span data-l="en">Path</span></h2>
+  <h2><span data-l="it">Esperienza e formazione</span><span data-l="en">Experience and education</span></h2>
   <p class="graph-legend">
-    <span class="key key-w"><span data-l="it">lavoro</span><span data-l="en">work</span></span>
-    <span class="key key-d"><span data-l="it">sviluppo</span><span data-l="en">development</span></span>
-    <span class="key key-s"><span data-l="it">studio</span><span data-l="en">study</span></span>
+    <span class="key key-w"><span data-l="it">Esperienza</span><span data-l="en">Experience</span></span>
+    <span class="key key-s"><span data-l="it">Formazione</span><span data-l="en">Education</span></span>
   </p>
   <ol class="graph">
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w up down node"></span><span class="lane d up down"></span><span class="lane s up down"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w up down node"></span><span class="lane s up down"></span></div>
       <div class="entry">
         <p class="when"><span data-l="it">03/2026 – oggi</span><span data-l="en">03/2026 – present</span></p>
         <h3>Security &amp; IT Infrastructure Analyst</h3>
-        <p class="org">Edge Group · <span data-l="it">Milano · holding assicurativa</span><span data-l="en">Milan · insurance holding</span></p>
-        <p data-l="it">Gestisco sicurezza e infrastruttura di due tenant Microsoft 365 per circa 350 utenti. Coordino la remediation dei VAPT interno ed esterno del 2026 e ho configurato la collaborazione tra i due tenant rispettando la segregazione richiesta da IVASS. Ho seguito una decina di integrazioni di società acquisite, dalla due diligence alla fusione, e ho distribuito 200 smartphone gestiti con Knox e Intune. Mi occupo anche di budget, fornitori e procedure interne, dall’onboarding al ticketing.</p>
-        <p data-l="en">I run security and infrastructure for two Microsoft 365 tenants and around 350 users. I am coordinating the remediation of the 2026 internal and external VAPT, and I set up collaboration between the two tenants while keeping the segregation IVASS requires. I have taken around ten acquired companies from due diligence to merger, and rolled out 200 smartphones managed with Knox and Intune. I also handle budgets, vendors and internal procedures, from onboarding to ticketing.</p>
+        <p class="org">Edge Group · <span data-l="it">Milano · Holding assicurativa</span><span data-l="en">Milan · Insurance holding company</span></p>
+        <p data-l="it">Seguo la sicurezza e l’infrastruttura di due tenant Microsoft 365 per circa 350 utenti, affiancando alla gestione tecnica il coordinamento di fornitori, budget e procedure interne.</p>
+        <p data-l="it">Coordino gli interventi di remediation a seguito dei VAPT interni ed esterni del 2026 e ho configurato la collaborazione tra i tenant nel rispetto dei requisiti di segregazione legati alla compliance IVASS.</p>
+        <p data-l="it">Ho seguito circa dieci integrazioni di società acquisite, dalla due diligence alle attività IT necessarie alla fusione, e curato la distribuzione di 200 smartphone aziendali con Samsung Knox e Microsoft Intune. Contribuisco inoltre alla definizione dei processi operativi, dall’onboarding alla gestione delle richieste di assistenza.</p>
+        <p data-l="en">I look after security and infrastructure for two Microsoft 365 tenants and around 350 users, combining technical management with the coordination of vendors, budgets and internal procedures.</p>
+        <p data-l="en">I coordinate remediation following the 2026 internal and external VAPT, and I configured collaboration between the tenants in line with the segregation requirements linked to IVASS compliance.</p>
+        <p data-l="en">I have handled around ten integrations of acquired companies, from due diligence to the IT work needed for the merger, and managed the rollout of 200 company smartphones with Samsung Knox and Microsoft Intune. I also help define operational processes, from onboarding to the handling of support requests.</p>
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w up down"></span><span class="lane d up down"></span><span class="lane s up down node"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w up down"></span><span class="lane s up down node"></span></div>
       <div class="entry">
-        <p class="when">10/2023 – 10/2026</p>
+        <p class="when"><span data-l="it">10/2023 – in corso</span><span data-l="en">10/2023 – ongoing</span></p>
         <h3><span data-l="it">Laurea magistrale in Ingegneria Informatica</span><span data-l="en">MSc in Computer Engineering</span></h3>
         <p class="org"><span data-l="it">Università degli Studi di Trieste</span><span data-l="en">University of Trieste</span></p>
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w up down"></span><span class="lane d up node"></span><span class="lane s up down"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w up down node"></span><span class="lane s up down"></span></div>
       <div class="entry">
         <p class="when"><span data-l="it">11/2022 – oggi</span><span data-l="en">11/2022 – present</span></p>
         <h3>Full Stack Developer</h3>
         <p class="org">Insureteach S.r.l. · Trieste</p>
-        <p data-l="it">Sviluppo le piattaforme web di Insureteach: Insurelab, che ospita corsi e academy, e YourSpace, il CRM con l’area dedicata ai clienti. Lavoro su entrambe dall’analisi dei requisiti fino al rilascio.</p>
-        <p data-l="en">I develop Insureteach’s web platforms: Insurelab, which hosts its courses and academies, and YourSpace, the CRM and client portal. I work on both from requirements analysis through to release.</p>
+        <p data-l="it">Ho seguito lo sviluppo di Insurelab, piattaforma dedicata a corsi e academy, e di YourSpace, CRM con area riservata ai clienti, dall’analisi dei requisiti al rilascio.</p>
+        <p data-l="it">Il ruolo comprende attività di sviluppo backend e frontend e il confronto con gli utenti per tradurre le esigenze operative in funzionalità applicative.</p>
+        <p data-l="en">I have worked on the development of Insurelab, a platform for courses and academies, and of YourSpace, a CRM with a client portal, from requirements analysis to release.</p>
+        <p data-l="en">The role covers back-end and front-end development, and working with users to turn operational needs into application features.</p>
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w up node"></span><span class="lane d"></span><span class="lane s up down"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w up node"></span><span class="lane s up down"></span></div>
       <div class="entry">
         <p class="when">11/2022 – 04/2026</p>
         <h3>IT Specialist</h3>
         <p class="org">Edge Broker · Trieste</p>
-        <p data-l="it">Ho gestito l’IT e i sistemi informativi della società, tra sviluppo, infrastruttura e licenze. Ho coordinato un progetto di cybersecurity basato sul NIST Cybersecurity Framework, parte del percorso di trasformazione digitale dell’azienda.</p>
-        <p data-l="en">I ran IT and information systems for the company, covering development, infrastructure and licensing, and coordinated a cybersecurity project based on the NIST Cybersecurity Framework as part of its digital transformation.</p>
+        <p data-l="it">Ho gestito i sistemi informativi aziendali, con attività su sviluppo software, infrastruttura e licenze. Ho inoltre coordinato un progetto di cybersecurity basato sul NIST Cybersecurity Framework, nell’ambito del percorso di trasformazione digitale della società.</p>
+        <p data-l="en">I managed the company’s information systems, working across software development, infrastructure and licensing. I also coordinated a cybersecurity project based on the NIST Cybersecurity Framework, as part of the company’s digital transformation.</p>
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w"></span><span class="lane d"></span><span class="lane s up down node"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w"></span><span class="lane s up down node"></span></div>
       <div class="entry">
         <p class="when">2022</p>
         <h3>Master in Blockchain and Digital Assets</h3>
@@ -91,7 +98,7 @@ layout: default
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w"></span><span class="lane d"></span><span class="lane s up node"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w"></span><span class="lane s up node"></span></div>
       <div class="entry">
         <p class="when">10/2019 – 03/2023</p>
         <h3><span data-l="it">Laurea triennale in Ingegneria Informatica</span><span data-l="en">BSc in Computer Engineering</span></h3>
@@ -99,23 +106,23 @@ layout: default
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w node"></span><span class="lane d"></span><span class="lane s"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w node"></span><span class="lane s"></span></div>
       <div class="entry">
         <p class="when">2018</p>
         <h3><span data-l="it">Stage</span><span data-l="en">Intern</span></h3>
         <p class="org">Brighton Language College International · Brighton, <span data-l="it">Regno Unito</span><span data-l="en">UK</span></p>
-        <p data-l="it">Ho lavorato in segreteria e affiancato gli insegnanti durante le lezioni di inglese.</p>
-        <p data-l="en">I worked in the school office and assisted teachers in English classes.</p>
+        <p data-l="it">Ho svolto attività di supporto alla segreteria e affiancato gli insegnanti durante le lezioni di inglese, lavorando in un contesto internazionale.</p>
+        <p data-l="en">I supported the school office and assisted teachers during English lessons, working in an international environment.</p>
       </div>
     </li>
     <li class="row">
-      <div class="lanes" aria-hidden="true"><span class="lane w node"></span><span class="lane d"></span><span class="lane s"></span></div>
+      <div class="lanes" aria-hidden="true"><span class="lane w node"></span><span class="lane s"></span></div>
       <div class="entry">
         <p class="when">2017</p>
         <h3>Product Management Intern</h3>
         <p class="org">Nice Group · Oderzo</p>
-        <p data-l="it">Ho partecipato al lancio di un nuovo prodotto e all’analisi della concorrenza per la linea Gates &amp; Doors.</p>
-        <p data-l="en">I worked on a new product launch and on competitor analysis for the Gates &amp; Doors line.</p>
+        <p data-l="it">Ho collaborato alle attività di lancio di un nuovo prodotto e all’analisi della concorrenza per la linea Gates &amp; Doors.</p>
+        <p data-l="en">I contributed to the launch of a new product and to competitor analysis for the Gates &amp; Doors line.</p>
       </div>
     </li>
   </ol>
@@ -123,48 +130,52 @@ layout: default
 
 <section class="section wrap" id="progetti">
   <h2><span data-l="it">Progetti</span><span data-l="en">Projects</span></h2>
+  <p class="section-lead" data-l="it">Una selezione di progetti tra integrazione dei sistemi, sicurezza, gestione IT e sviluppo software.</p>
+  <p class="section-lead" data-l="en">A selection of projects across systems integration, security, IT management and software development.</p>
 
-  <h3 class="group-title"><span data-l="it">Personali</span><span data-l="en">Personal</span></h3>
+  <h3 class="group-title"><span data-l="it">Progetti professionali</span><span data-l="en">Professional projects</span></h3>
   <ul class="projects">
     <li>
-      <h4><span data-l="it">Tesi magistrale · O.Di.Ri.S.</span><span data-l="en">MSc thesis · O.Di.Ri.S.</span></h4>
-      <p data-l="it">Una piattaforma che misura il rischio clinico-assicurativo delle strutture sanitarie, sviluppata con Insureteach all’interno di un progetto finanziato dalla Regione. Un agente vocale basato su LLM guida la segnalazione degli eventi avversi; dai dati raccolti nasce un indice di rischio che aiuta a stimare i fondi rischi previsti dal DM 232/2023.</p>
-      <p data-l="en">A platform that measures insurance-related clinical risk in healthcare facilities, developed with Insureteach as part of a regionally funded project. An LLM-based voice agent guides incident reporting, and the data it collects feeds a risk index that helps estimate the risk funds required by Italian Ministerial Decree 232/2023.</p>
-      <p class="tags">Python · LangGraph · LLM · <span data-l="it">modelli attuariali</span><span data-l="en">actuarial modelling</span></p>
-    </li>
-    <li>
-      <h4><span data-l="it">Venetocore · Magazzino</span><span data-l="en">Venetocore · Inventory</span></h4>
-      <p data-l="it">Il gestionale interno di una piccola startup di magliette nata da un gruppo di amici. Tiene traccia di magazzino, ordini di clienti e fornitori e foto dei design. Si usa dal telefono come un’app e vi accede solo il team.</p>
-      <p data-l="en">The internal management tool for a small t-shirt startup started by a group of friends. It tracks stock, customer and supplier orders, and design photos. It runs on a phone like an app, and only the team can sign in.</p>
-      <p class="tags">JavaScript · Supabase · PostgreSQL · PWA</p>
-    </li>
-  </ul>
-
-  <h3 class="group-title"><span data-l="it">Dal lavoro</span><span data-l="en">From work</span></h3>
-  <ul class="projects">
-    <li>
-      <h4><span data-l="it">Integrazione IT nelle acquisizioni</span><span data-l="en">IT integration in acquisitions</span></h4>
-      <p data-l="it">Un metodo che ripeto a ogni acquisizione: due diligence IT, piano di integrazione e attività da chiudere fino alla fusione. L’ho applicato a una decina di società.</p>
-      <p data-l="en">A method I repeat with every acquisition: IT due diligence, an integration plan and a backlog of tasks through to the merger. I have applied it to around ten companies.</p>
-      <p class="tags">Microsoft 365 · Entra ID · <span data-l="it">gestione progetto</span><span data-l="en">project management</span></p>
+      <h4><span data-l="it">Integrazione IT delle società acquisite</span><span data-l="en">IT integration of acquired companies</span></h4>
+      <p data-l="it">Seguo il percorso di integrazione IT delle società che entrano nel gruppo: due diligence, definizione del piano di integrazione e coordinamento delle attività fino alla fusione. Ho applicato questo metodo a circa dieci società, lavorando con fornitori e referenti interni.</p>
+      <p data-l="en">I manage the IT integration of companies joining the group: due diligence, defining the integration plan and coordinating the work through to the merger. I have applied this approach to around ten companies, working with vendors and internal contacts.</p>
+      <p class="tags">Microsoft 365 · Entra ID · <span data-l="it">Coordinamento IT · Integrazioni societarie</span><span data-l="en">IT coordination · Company integrations</span></p>
     </li>
     <li>
       <h4><span data-l="it">Migrazioni Microsoft 365 e SharePoint</span><span data-l="en">Microsoft 365 and SharePoint migrations</span></h4>
-      <p data-l="it">Ho spostato caselle di posta da un tenant all’altro e portato i file server on-premise su SharePoint, documentando ogni passaggio e senza fermare il lavoro degli utenti.</p>
-      <p data-l="en">I moved mailboxes between tenants and on-premises file servers to SharePoint, documenting each step and without interrupting people’s work.</p>
+      <p data-l="it">Ho seguito migrazioni di posta tra tenant Microsoft 365 e il trasferimento di archivi dai file server locali a SharePoint. Il lavoro comprende pianificazione, coordinamento delle attività e documentazione, con attenzione alla continuità operativa e al passaggio degli utenti ai nuovi strumenti.</p>
+      <p data-l="en">I have handled mailbox migrations between Microsoft 365 tenants and the transfer of archives from on-premises file servers to SharePoint. The work covers planning, coordination and documentation, with attention to business continuity and to moving users onto the new tools.</p>
       <p class="tags">MigrationWiz · ShareGate · SharePoint · Exchange Online</p>
     </li>
     <li>
-      <h4><span data-l="it">Flotta mobile gestita</span><span data-l="en">Managed mobile fleet</span></h4>
-      <p data-l="it">200 smartphone aziendali consegnati pronti all’uso: si registrano da soli al primo avvio e si gestiscono da un’unica console.</p>
-      <p data-l="en">200 company smartphones handed out ready to use: they enrol themselves on first start-up and are managed from a single console.</p>
+      <h4><span data-l="it">Gestione della flotta mobile</span><span data-l="en">Mobile fleet management</span></h4>
+      <p data-l="it">Ho curato la distribuzione di 200 smartphone aziendali, predisponendo la registrazione automatica al primo avvio e la gestione dei dispositivi attraverso Samsung Knox e Microsoft Intune. Il progetto consente di applicare configurazioni e criteri aziendali in modo uniforme.</p>
+      <p data-l="en">I managed the rollout of 200 company smartphones, setting up automatic enrolment on first start-up and device management through Samsung Knox and Microsoft Intune. The project makes it possible to apply company configurations and policies consistently.</p>
       <p class="tags">Samsung Knox · Microsoft Intune · Android Enterprise</p>
     </li>
     <li>
-      <h4>YourSpace</h4>
-      <p data-l="it">Il CRM di Insureteach, con un’interfaccia web pensata per i clienti. Ne ho curato lo sviluppo completo, dal backend all’interfaccia.</p>
-      <p data-l="en">Insureteach’s CRM, with a web interface built for its clients. I developed it end to end, from the back end to the interface.</p>
-      <p class="tags">Node.js · SQL Server · Nginx</p>
+      <h4><span data-l="it">YourSpace — CRM e area clienti</span><span data-l="en">YourSpace — CRM and client portal</span></h4>
+      <p data-l="it">Il CRM di Insureteach, con un’area web riservata ai clienti. Ne ho curato lo sviluppo dal backend all’interfaccia, partendo dall’analisi dei requisiti e dei processi operativi.</p>
+      <p data-l="en">Insureteach’s CRM, with a web portal reserved for clients. I developed it from the back end to the interface, starting from an analysis of requirements and operational processes.</p>
+      <p class="tags">Python/Flask · Node.js · SQL Server · Nginx</p>
+    </li>
+  </ul>
+
+  <h3 class="group-title"><span data-l="it">Ricerca e progetti personali</span><span data-l="en">Research and personal projects</span></h3>
+  <ul class="projects">
+    <li>
+      <h4><span data-l="it">O.Di.Ri.S. — Tesi magistrale</span><span data-l="en">O.Di.Ri.S. — MSc thesis</span></h4>
+      <p data-l="it">Una piattaforma per la valutazione del rischio clinico-assicurativo delle strutture sanitarie, sviluppata con Insureteach nell’ambito di un progetto finanziato dalla Regione.</p>
+      <p data-l="it">Un agente vocale basato su modelli linguistici accompagna la segnalazione degli eventi avversi. I dati raccolti alimentano un indice di rischio a supporto della stima dei fondi rischi previsti dal DM 232/2023.</p>
+      <p data-l="en">A platform for assessing insurance-related clinical risk in healthcare facilities, developed with Insureteach as part of a regionally funded project.</p>
+      <p data-l="en">A voice agent based on language models supports the reporting of adverse events. The data collected feeds a risk index that supports the estimation of the risk funds required by Ministerial Decree 232/2023.</p>
+      <p class="tags">Python · LangGraph · LLM · <span data-l="it">Modelli attuariali</span><span data-l="en">Actuarial models</span></p>
+    </li>
+    <li>
+      <h4><span data-l="it">Venetocore — Gestionale di magazzino</span><span data-l="en">Venetocore — Inventory management app</span></h4>
+      <p data-l="it">Ho sviluppato il gestionale interno di Venetocore, una piccola startup di magliette nata da un gruppo di amici. L’applicazione riunisce magazzino, ordini di clienti e fornitori e immagini dei design. È riservata al team e utilizzabile da smartphone come PWA.</p>
+      <p data-l="en">I built the internal management app for Venetocore, a small t-shirt startup founded by a group of friends. The app brings together stock, customer and supplier orders, and design images. It is restricted to the team and can be used on a smartphone as a PWA.</p>
+      <p class="tags">JavaScript · Supabase · PostgreSQL · PWA</p>
     </li>
   </ul>
 </section>
@@ -172,19 +183,25 @@ layout: default
 <section class="section wrap" id="competenze">
   <h2><span data-l="it">Competenze</span><span data-l="en">Skills</span></h2>
   <dl class="skills">
-    <div><dt><span data-l="it">Cloud e identità</span><span data-l="en">Cloud and identity</span></dt><dd>Microsoft 365, Entra ID, Exchange Online, SharePoint, multi-tenant</dd></div>
-    <div><dt><span data-l="it">Automazione e migrazioni</span><span data-l="en">Automation and migrations</span></dt><dd>PowerShell, Microsoft Graph, ShareGate, MigrationWiz</dd></div>
-    <div><dt><span data-l="it">Endpoint e mobile</span><span data-l="en">Endpoint and mobile</span></dt><dd>Microsoft Intune, Knox KME, Knox Manage, Android Enterprise</dd></div>
-    <div><dt><span data-l="it">Sicurezza e rete</span><span data-l="en">Security and network</span></dt><dd>Sophos, VAPT, NIST CSF, DNS</dd></div>
-    <div><dt><span data-l="it">Sviluppo e dati</span><span data-l="en">Development and data</span></dt><dd>Python/Flask, Node.js, PostgreSQL, SQL Server, Nginx, Linux, Power BI</dd></div>
-    <div><dt><span data-l="it">Gestione</span><span data-l="en">Management</span></dt><dd><span data-l="it">gestione dei fornitori, budget IT, ITSM, procedure e SLA, compliance IVASS</span><span data-l="en">vendor management, IT budgeting, ITSM, procedures and SLAs, IVASS compliance</span></dd></div>
-    <div><dt><span data-l="it">Certificazioni</span><span data-l="en">Certifications</span></dt><dd>ECDL, Cambridge First Certificate in English (B2), Digital Marketing Diploma (Studio Samo, 2018)</dd></div>
-    <div><dt><span data-l="it">Lingue</span><span data-l="en">Languages</span></dt><dd><span data-l="it">italiano madrelingua, inglese B2</span><span data-l="en">Italian native, English B2</span></dd></div>
+    <div><dt><span data-l="it">Gestione e processi IT</span><span data-l="en">IT management and processes</span></dt><dd><span data-l="it">Coordinamento dei fornitori, budget IT, pianificazione delle attività, integrazioni societarie, ITSM, procedure e SLA, supporto alla compliance IVASS.</span><span data-l="en">Vendor coordination, IT budgeting, activity planning, company integrations, ITSM, procedures and SLAs, IVASS compliance support.</span></dd></div>
+    <div><dt><span data-l="it">Sicurezza</span><span data-l="en">Security</span></dt><dd><span data-l="it">Coordinamento della remediation VAPT, NIST Cybersecurity Framework, Sophos.</span><span data-l="en">VAPT remediation coordination, NIST Cybersecurity Framework, Sophos.</span></dd></div>
+    <div><dt><span data-l="it">Cloud e identità</span><span data-l="en">Cloud and identity</span></dt><dd><span data-l="it">Microsoft 365, Entra ID, Exchange Online, SharePoint, gestione multi-tenant.</span><span data-l="en">Microsoft 365, Entra ID, Exchange Online, SharePoint, multi-tenant management.</span></dd></div>
+    <div><dt><span data-l="it">Endpoint e dispositivi mobili</span><span data-l="en">Endpoints and mobile devices</span></dt><dd>Microsoft Intune, Samsung Knox Mobile Enrollment, Knox Manage, Android Enterprise.</dd></div>
+    <div><dt><span data-l="it">Automazione e migrazioni</span><span data-l="en">Automation and migrations</span></dt><dd>PowerShell, Microsoft Graph, ShareGate, MigrationWiz.</dd></div>
+    <div><dt><span data-l="it">Sviluppo, sistemi e dati</span><span data-l="en">Development, systems and data</span></dt><dd>Python/Flask, Node.js, PostgreSQL, SQL Server, Nginx, Linux, DNS, Power BI.</dd></div>
+  </dl>
+
+  <h3 class="group-title group-gap"><span data-l="it">Certificazioni e altra formazione</span><span data-l="en">Certifications and other training</span></h3>
+  <dl class="skills">
+    <div><dt><span data-l="it">Certificazioni</span><span data-l="en">Certifications</span></dt><dd>ECDL<br>Cambridge First Certificate in English (B2)<br>Digital Marketing Diploma — Studio Samo, 2018</dd></div>
+    <div><dt><span data-l="it">Lingue</span><span data-l="en">Languages</span></dt><dd><span data-l="it">Italiano madrelingua<br>Inglese B2</span><span data-l="en">Italian, native<br>English, B2</span></dd></div>
   </dl>
 </section>
 
 <section class="section wrap" id="blog">
   <h2>Blog</h2>
+  <p class="section-lead" data-l="it">Esperienze e approfondimenti su sicurezza, gestione IT e scelte tecnologiche.</p>
+  <p class="section-lead" data-l="en">Experiences and insights on security, IT management and technology choices.</p>
   <ol class="posts">
     {% for post in site.posts limit: 6 %}
     <li data-l="{{ post.lang }}">
@@ -194,13 +211,13 @@ layout: default
     </li>
     {% endfor %}
   </ol>
-  <p class="more"><a href="{{ '/blog/' | relative_url }}"><span data-l="it">Tutti gli articoli</span><span data-l="en">All posts</span></a></p>
+  <p class="more"><a class="btn" href="{{ '/blog/' | relative_url }}"><span data-l="it">Leggi tutti gli articoli</span><span data-l="en">Read all posts</span></a></p>
 </section>
 
 <section class="section wrap contact" id="contatti">
   <h2><span data-l="it">Contatti</span><span data-l="en">Contact</span></h2>
-  <p class="prose" data-l="it">Per collaborazioni, opportunità di lavoro o anche solo per parlare di Microsoft 365 e sicurezza, scrivimi un’email.</p>
-  <p class="prose" data-l="en">For collaborations, job opportunities or just a conversation about Microsoft 365 and security, send me an email.</p>
+  <p class="prose" data-l="it">Per opportunità professionali, collaborazioni o un confronto su sicurezza e gestione IT, puoi contattarmi qui.</p>
+  <p class="prose" data-l="en">For professional opportunities, collaborations or a conversation about security and IT management, you can reach me here.</p>
   <ul class="contact-list">
     <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
     <li><a href="{{ site.author.linkedin }}">linkedin.com/in/elisabettachisso</a></li>

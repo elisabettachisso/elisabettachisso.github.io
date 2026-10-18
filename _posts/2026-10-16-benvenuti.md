@@ -6,7 +6,7 @@ ref: welcome
 summary: "Chi sono, di cosa mi occupo e perché ho aperto questo sito."
 ---
 
-Mi chiamo Elisabetta e mi occupo di sicurezza e infrastruttura Microsoft 365 per un gruppo assicurativo. Questo è il primo articolo del sito, e mi sembra giusto cominciare presentandomi.
+Mi chiamo Elisabetta e lavoro come Security & IT Infrastructure Analyst in un gruppo assicurativo. Questo è il primo articolo del sito, e mi sembra giusto cominciare presentandomi.
 
 ## Da dove vengo
 
@@ -16,7 +16,7 @@ Col tempo mi sono avvicinata a quello che sta sotto le applicazioni: identità, 
 
 ## Cosa faccio oggi
 
-In Edge Group gestisco i due tenant Microsoft 365 di un gruppo di una ventina di società, per circa 350 persone. Coordino la remediation dei VAPT, ho configurato la collaborazione tra i due tenant nel rispetto della segregazione richiesta da IVASS e ho distribuito 200 smartphone gestiti con Knox e Intune.
+In Edge Group gestisco i due tenant Microsoft 365 di un gruppo di circa venti società e 350 persone. Coordino la remediation dei VAPT, ho configurato la collaborazione tra i due tenant nel rispetto della segregazione richiesta da IVASS e ho distribuito 200 smartphone gestiti con Knox e Intune.
 
 Una parte importante del lavoro non è tecnica: integro nel gruppo le società acquisite, coordino fornitori e colleghi, seguo budget e procedure. Di ogni sistema voglio capire come funziona, quanto costa e chi lo usa, per saperlo spiegare a chi deve prendere le decisioni.
 

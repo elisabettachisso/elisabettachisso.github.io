@@ -176,7 +176,7 @@
     var newSeed = function () { return 1 + Math.floor(Math.random() * 9999); };
     var hero = new Composition({
       canvas: heroCanvas, seed: newSeed(), density: 360, max: 3200,
-      steps: 640, scale: 0.0016, alpha: 0.1, width: 1.2, animate: true
+      steps: 560, scale: 0.0024, alpha: 0.075, width: 1.1, animate: true
     });
     var label = function (s) { if (seedLabel) seedLabel.textContent = String(s).padStart(4, '0'); };
     var current = 0;
