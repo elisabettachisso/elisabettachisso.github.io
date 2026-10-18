@@ -6,22 +6,28 @@ ref: welcome
 summary: "Chi sono, di cosa mi occupo e perché ho aperto questo sito."
 ---
 
-Mi chiamo Elisabetta e lavoro nell’IT di un gruppo assicurativo, a metà strada tra sicurezza, infrastruttura e codice.
+Mi chiamo Elisabetta e mi occupo di sicurezza e infrastruttura Microsoft 365 per un gruppo assicurativo. Questo è il primo articolo del sito, e mi sembra giusto cominciare presentandomi.
 
-## Dallo sviluppo alla sicurezza
+## Da dove vengo
 
-Ho iniziato come sviluppatrice full stack e non ho mai smesso di scrivere codice: con Insureteach sviluppo Insurelab, la piattaforma di corsi e academy, e il CRM YourSpace, seguendo ogni fase dai requisiti al rilascio. Col tempo mi sono avvicinata alla sicurezza e all’infrastruttura, e oggi guardo alla tecnologia da due punti di vista: come si costruisce e come si gestisce, si protegge e si governa.
+Ho cominciato scrivendo software e non ho mai smesso. Con Insureteach sviluppo Insurelab, la piattaforma che ospita corsi e academy, e YourSpace, il CRM con l’area dedicata ai clienti.
 
-In Edge Group seguo direttamente i due tenant Microsoft 365 di un gruppo con una ventina di società e circa 350 utenti. Mi occupo della remediation dei VAPT, della collaborazione tra i tenant nel rispetto della segregazione richiesta da IVASS, delle migrazioni verso SharePoint e della flotta di smartphone aziendali. Oltre al lavoro tecnico, coordino fornitori e colleghi nei progetti più ampi, come l’integrazione IT delle società acquisite, e mi occupo di budget e procedure.
+Col tempo mi sono avvicinata a quello che sta sotto le applicazioni: identità, reti, dispositivi, permessi. Oggi conosco entrambi i lati della tecnologia, come si costruisce un sistema e come lo si mantiene sicuro e sotto controllo, e credo sia la cosa che mi rende utile.
 
-## Il quadro completo
+## Cosa faccio oggi
 
-Di un sistema mi piace capire tutto: come va configurato, quanto costa, chi lo usa ogni giorno e come presentarlo al management. È lo stesso approccio che ho portato nella tesi magistrale in Ingegneria Informatica all’Università di Trieste. Il progetto si chiama O.Di.Ri.S.: un agente vocale basato su LLM aiuta le strutture sanitarie a segnalare gli eventi avversi e, a partire da quei dati, calcola un indice di rischio clinico-assicurativo.
+In Edge Group gestisco i due tenant Microsoft 365 di un gruppo di una ventina di società, per circa 350 persone. Coordino la remediation dei VAPT, ho configurato la collaborazione tra i due tenant nel rispetto della segregazione richiesta da IVASS e ho distribuito 200 smartphone gestiti con Knox e Intune.
+
+Una parte importante del lavoro non è tecnica: integro nel gruppo le società acquisite, coordino fornitori e colleghi, seguo budget e procedure. Di ogni sistema voglio capire come funziona, quanto costa e chi lo usa, per saperlo spiegare a chi deve prendere le decisioni.
+
+## La tesi
+
+Sto concludendo la laurea magistrale in Ingegneria Informatica all’Università di Trieste. La tesi è O.Di.Ri.S., una piattaforma sviluppata con Insureteach per misurare il rischio clinico-assicurativo nelle strutture sanitarie: un agente vocale basato su LLM guida la segnalazione degli eventi avversi, e dai dati raccolti nasce un indice di rischio.
 
 ## Fuori dal lavoro
 
-Sono curiosa per natura. In cucina mi piace sperimentare ricette da tutto il mondo, suono il pianoforte (ho studiato al Conservatorio di Vittorio Veneto) e nel tempo libero giro per mercatini dell’usato a caccia di oggetti con una storia. È da lì che è nata la mia passione per il design, e da lì vengono anche le composizioni generative in cima a questo sito: a ogni visita ne nasce una diversa.
+Suono il pianoforte, che ho studiato al Conservatorio di Vittorio Veneto. In cucina provo ricette da tutto il mondo e nel tempo libero giro per mercatini dell’usato, a caccia di oggetti con una storia. Da lì è nata la passione per il design, e da lì vengono anche le composizioni generative in cima a questa pagina: ogni visita ne disegna una nuova.
 
-## Cosa troverai qui
+## Di cosa scriverò
 
-Scriverò di sicurezza e infrastruttura Microsoft 365, di migrazioni e integrazioni IT, di sviluppo e di tutto quello che imparo strada facendo. Se ti va di parlarne, scrivimi: è il modo più rapido per raggiungermi.
+Di sicurezza e infrastruttura Microsoft 365, di migrazioni e integrazioni IT, di sviluppo e di quello che imparo lavorando. Se vuoi parlarne, scrivimi un’email.
